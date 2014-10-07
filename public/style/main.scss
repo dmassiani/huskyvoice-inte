@@ -1,6 +1,9 @@
 @import "components/harp-bourbon/scss/bourbon";
 @import "settings/typography";
-$visual-grid: true;
+$visual-grid: false;
+$visual-grid-color: rgb(86,211,255);
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
 @import "components/base/base";
 @import "components/harp-neat/scss/neat";
 

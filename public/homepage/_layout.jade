@@ -1,50 +1,13 @@
 doctype
 html
 	head
-		meta(charset="utf-8")
-		meta(name="viewport" content="width=device-width")
-		script(src='/bundle.js')
+		
+		include ../partials/_head.jade
 
-		link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700,500")
-		link(rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,500,600,700,800")
-		link(rel="stylesheet" href="/style/main.css")
 		link(rel="stylesheet" href="/style/pages/homepage.css")
 
 		script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
-	body
-		header.navigation
-			.navigation-wrapper
-				a.logo(href='javascript:void(0)')
-					img(alt='Logo Image', src='https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png')
-				a#js-mobile-menu.navigation-menu-button(href='') MENU
-				.nav
-					ul#navigation-menu
-						li.nav-link
-							a(href='javascript:void(0)') Products
-						li.nav-link
-							a(href='javascript:void(0)') About Us
-						li.nav-link
-							a(href='javascript:void(0)') Contact
-						li.nav-link.more
-							a(href='javascript:void(0)') More
-							ul.submenu
-								li
-									a(href='javascript:void(0)') Submenu Item
-								li
-									a(href='javascript:void(0)') Another Item
-								li.more
-									a(href='javascript:void(0)') Item with submenu
-									ul.submenu
-										li
-											a(href='javascript:void(0)') Sub-submenu Item
-										li
-											a(href='javascript:void(0)') Another Item
-										li.more
-											a(href='javascript:void(0)') Another submenu
-											ul.submenu
-												li
-													a(href='javascript:void(0)') Sub-submenu
-												li
-													a(href='javascript:void(0)') An Item
-
+		
+	body.homepage
+		include ../partials/_menu.jade
 		!= yield
