@@ -1,0 +1,13 @@
+
+// #######################################
+// Layout
+// #######################################
+
+
+.container {
+	@include outer-container;
+	padding: 0 20px;
+	@include media($xlarge-screen) {
+		padding: 0;
+	}
+}
