@@ -32,19 +32,24 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477DCA;
-$dark-gray: #333;
+$dark-gray: #555555;
 $medium-gray: #999;
 $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
+// husky voice colors 
+$dark-pink: #3B2853;
+$soft-pink: #B09FC7;
+$gray: #454545;
+
 // Background Color
 $base-background-color: white;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $dark-pink;
 
 // Link Colors
 $base-link-color: $base-accent-color;
