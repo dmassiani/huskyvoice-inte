@@ -44,7 +44,13 @@
 	&.pink{
 		@include button( pink, white );
 	}
-	&.white{
-		@include button( white, white );
+  &.white{
+    @include button( white, $gray );
+    &.border{
+      @include button( white, white );
+    }
+  }
+	&.pink.soft{
+		@include button( $soft-pink, white );
 	}
 }
