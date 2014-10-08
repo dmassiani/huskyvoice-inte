@@ -1,0 +1,18 @@
+// #######################################
+// Seasons
+// #######################################
+// - 50 50
+// #######################################
+
+.seasons{
+	@include clearfix;
+}
+
+.season{
+
+	@include media($medium-screen) {
+		@include span-columns(6);
+		@include omega(2n);
+	}
+
+}
