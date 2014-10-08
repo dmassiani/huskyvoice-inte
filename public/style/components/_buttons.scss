@@ -52,6 +52,9 @@
   }
   &.pink.soft{
     @include button( $soft-pink, white );
+    &.border{
+      @include button( $soft-pink, $soft-pink );
+    }
   }
 	&.pink.hard{
 		@include button( $hard-pink, white );

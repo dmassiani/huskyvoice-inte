@@ -8,11 +8,29 @@
 	@include clearfix;
 }
 
+.seasons{
+	padding: 2em 0;
+	@include media($medium-screen) {
+		padding: 1em 1em;
+	}
+	@include media($large-screen) {
+		padding: 2em 0;
+	}
+} 
+
 .season{
 
+	text-align: center;
+	padding: 2em 0;
+
 	@include media($medium-screen) {
+		text-align: left;
 		@include span-columns(6);
 		@include omega(2n);
+	}
+
+	@include media($large-screen) {
+		padding: 0em 0;
 	}
 
 }

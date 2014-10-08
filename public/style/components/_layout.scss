@@ -13,16 +13,20 @@
 }
 
 .wrapper{
-  .container{
-    padding: 6em 0;
-  }
-  &.pink{
-    &.soft{
-      background: $soft-pink;
-      color: white;
-    }
-  }
-  &.center{
-    text-align: center;
-  }
+	.container{
+		padding: 6em 0;
+	}
+	&.pink{
+		&.soft{
+		  	background: $soft-pink;
+		  	color: white;
+		}
+		&.fade{
+			background: $fade-pink;
+			color: $dark-pink;
+		}
+	}
+	&.center{
+		text-align: center;
+	}
 }
