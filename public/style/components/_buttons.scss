@@ -4,10 +4,10 @@
   border-radius: $base-border-radius;
   color: $text-color;
   display: inline-block;
-  font-size: $base-font-size;
+  font-size: $base-font-size * 1.2;
   font-weight: bold;
   line-height: 1;
-  padding: 1.2em 2.8em;
+  padding: 1.4em 2.8em;
   text-decoration: none;
   text-transform: uppercase;
   @include transition (all 2.0s ease);

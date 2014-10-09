@@ -5,50 +5,50 @@
 // #######################################
 
 .cards {
-  @include clearfix;
-}
+	@include clearfix;
 
-.card {
-  $card-border-color: $base-border-color;
-  $card-border: 1px solid $card-border-color;
-  $card-background: lighten($card-border-color, 10);
-  $card-header-background: $card-background;
-  $card-hover-background: lighten($card-background, 5);
-  $card-image-background: #DBD199;
-  $card-image-hover-background: lighten($card-image-background, 5);
-  $card-stats-color: lighten($base-accent-color, 10);
+	.card {
+		$card-border-color: $base-border-color;
+		$card-border: 1px solid $card-border-color;
+		$card-background: lighten($card-border-color, 10);
+		$card-header-background: $card-background;
+		$card-hover-background: lighten($card-background, 5);
+		$card-image-background: #DBD199;
+		$card-image-hover-background: lighten($card-image-background, 5);
+		$card-stats-color: lighten($base-accent-color, 10);
 
-  @include transition (all 0.2s ease-in-out);
-  cursor: pointer;
-  position: relative;
-  text-align: center;
+		@include transition (all 0.2s ease-in-out);
+		cursor: pointer;
+		position: relative;
+		text-align: center;
 
-  @include media($medium-screen) {
-    @include span-columns(4);  
-    @include omega(3n);
-  }
+		@include media($medium-screen) {
+			@include span-columns(4);  
+			@include omega(3n);
+		}
 
-  .card-image {
-    overflow: hidden;
-    max-height: 300px;
+		.card-image {
+			overflow: hidden;
+			max-height: 300px;
 
-    img {
-      width: 100%;
-      @include transition (all 0.2s ease-in-out);
-      background: $card-image-background;
-    }
-  }
+			img {
+				width: 100%;
+				@include transition (all 0.2s ease-in-out);
+				background: $card-image-background;
+			}
+		}
 
 
-  .card-header {
-    @include transition (all 0.2s ease-in-out);
-    padding: $base-spacing/3 $gutter/2;
-  }
+		.card-header {
+			@include transition (all 0.2s ease-in-out);
+			padding: $base-spacing/3 $gutter/2;
+		}
 
-  .card-content {
-    padding: $base-spacing/2 $gutter/2;
-    font-size: .9em;
-    line-height: 1.5em;
-  }
+		.card-content {
+			padding: $base-spacing/2 $gutter/2;
+			font-size: .9em;
+			line-height: 1.5em;
+		}
 
+	}
 }

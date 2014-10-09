@@ -1,0 +1,18 @@
+@import "../settings/typography";
+@import "components/base/_variables.scss";
+
+.homepage{
+  header.navigation{
+    position: absolute;
+    background: transparent;
+  }
+}
+header.navigation ul li.nav-link a {
+	color: white;
+}
+header.navigation li.more.nav-link>a:after {
+	color: white;
+}
+header.navigation ul li.nav-link.more .submenu a {
+	color: $gray;
+}
