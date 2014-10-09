@@ -1,6 +1,6 @@
 @import "components/harp-bourbon/scss/bourbon";
 @import "settings/typography";
-$visual-grid: true;
+$visual-grid: false;
 $visual-grid-color: red;
 $visual-grid-index: front;
 $visual-grid-opacity: 0.2;
@@ -17,6 +17,7 @@ $visual-grid-opacity: 0.2;
 @import "components/_cards.scss";
 @import "components/_hero.scss";
 @import "components/_seasons.scss";
+@import "components/_contact.scss";
 
 body{
 	background: #fff;

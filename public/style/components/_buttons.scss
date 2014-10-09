@@ -37,7 +37,8 @@
 
 }
 
-.button{
+.button,
+button{
 	&.grey{
 		@include button( #ddd, grey );
 	}

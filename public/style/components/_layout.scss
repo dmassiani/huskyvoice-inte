@@ -26,7 +26,20 @@
 			color: $dark-pink;
 		}
 	}
+	&.gray{
+		background: $gray;
+		color: white;
+	}
 	&.center{
 		text-align: center;
+	}
+}
+
+footer{
+	background: darken($gray, 10%);
+	color: white;
+	text-align: right;
+	a{
+		color: white;
 	}
 }
