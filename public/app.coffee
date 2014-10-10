@@ -23,5 +23,6 @@ $ ->
 				.addClass "active-nav-item"
 			$ ".nav .more"
 				.removeClass "active-nav-item"
+
 	false
 
