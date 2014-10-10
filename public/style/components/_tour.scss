@@ -1,0 +1,22 @@
+.wrapper{
+	&.tour{
+		@include row(table);
+		.container{
+			padding: 0;
+		}
+		.offer{
+			@include span-columns(4);
+			@include pad();
+			background: $dark-pink;
+			color: white;
+			padding: 5em 6em;
+		}
+		.travel{
+			@include span-columns(8);
+			@include reset-display;
+			@include pad();
+
+			padding: 5em 6em;
+		}
+	}
+}
