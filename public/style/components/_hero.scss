@@ -215,31 +215,54 @@
 		} 
 	}
 	&.card{
+		@include row(table);
 		.hero-inner{
+			$hero-background-top: $base-accent-color; 
+			@include background(no-repeat $hero-background-top scroll);
+
+			background-repeat: no-repeat;
+			background-position: top;
+			background-size: cover;
+
 			max-width: inherit;
+
+			@include span-columns(6);
+			@include pad();
+
+
 		}
-		.content{
+		.hero-copy	{
 
 			background: white;
 			color: $gray;
 			text-align: left;
 
 			@include span-columns(6);
-			@include omega(1n);
-			&.right{
-				@include shift(6);
-			}
+			@include reset-display;
+			@include pad();
 
-			@include media($medium-screen) {
+			padding: 5em 6em;
+
+		}
+
+
+		&.left{
+			.hero-copy{
+
 				@include span-columns(6);
-				@include shift(6);
-				@include omega(1n);
+				@include pad();
+				max-width: inherit;
+
 			}
-			@include media($large-screen) {
+			.hero-inner	{
+
 				@include span-columns(6);
-				@include shift(6);
-				@include omega(1n);
+				@include reset-display;
+				@include pad();
+
 			}
 		}
+
+
 	}
 }
