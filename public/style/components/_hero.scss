@@ -247,11 +247,13 @@
 
 
 		&.left{
+			@include row(table); // really important
 			.hero-copy{
 
 				@include span-columns(6);
 				@include pad();
 				max-width: inherit;
+				padding: 5em 6em;
 
 			}
 			.hero-inner	{
