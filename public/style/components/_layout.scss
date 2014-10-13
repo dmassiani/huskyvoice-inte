@@ -18,8 +18,8 @@
 	}
 	&.pink{
 		&.soft{
-		  	background: $soft-pink;
-		  	color: white;
+				background: $soft-pink;
+				color: white;
 		}
 		&.fade{
 			background: $fade-pink;
@@ -32,6 +32,10 @@
 	}
 	&.center{
 		text-align: center;
+	}
+	&.presse{
+		background: $soft-pink;
+		color: white;
 	}
 }
 

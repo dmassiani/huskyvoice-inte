@@ -13,6 +13,19 @@
 			@include span-columns(6);
 			@include omega(2n);
 		}
+		.social{
+			a{
+				color: white;
+				font-size: 3em;
+				padding: 0 .3em;
+			}
+			.tripadvizor{
+				font-size: 4em;
+			}
+			a:hover{
+				color: $soft-pink;
+			}
+		}
 	}
 
 	@include media($large-screen) {
