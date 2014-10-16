@@ -38,7 +38,8 @@
 }
 
 .button,
-button{
+button,
+input[type="submit"]{
 	&.grey{
 		@include button( #ddd, grey );
 	}
