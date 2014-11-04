@@ -43,7 +43,21 @@ footer{
 	background: darken($gray, 10%);
 	color: white;
 	text-align: right;
+	padding: 10px;
+	li{
+		text-align: left;
+	}
 	a{
 		color: white;
 	}
+}
+
+.visuallyhidden{
+	display: none;
+}
+.dashicons{
+	display: inherit;
+	vertical-align: middle;
+	text-align: right;
+	margin-top: -5px;
 }

@@ -24,9 +24,9 @@
 	padding: 2em 0;
 
 	@include media($medium-screen) {
-		text-align: left;
-		@include span-columns(6);
-		@include omega(2n);
+		// text-align: left;
+		@include span-columns(4);
+		@include omega(3n);
 	}
 
 	@include media($large-screen) {
